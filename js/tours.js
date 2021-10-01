@@ -1,4 +1,4 @@
-//import { toursArray } from "./constants/toursList.js";
+//export { getTours(baseUrl) };
 const productsContainer = document.querySelector(".products");
 const cart = document.querySelector(".cart");
 const cartList = document.querySelector(".cart-list");

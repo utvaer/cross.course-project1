@@ -25,6 +25,8 @@ h3 {
 }
 h1 {
   text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
 }
 
 .logo {
@@ -88,18 +90,24 @@ footer a {
 }
 
 /* --------------------------- GENERAL HOME ------------------------------ */
-
+.homepage {
+  background-color: #333233;
+}
 .home-banner {
   position: relative;
 }
-.home-banner p {
+.home-banner h1 {
+  text-transform: uppercase;
   background-color: #f2ede4;
-  opacity: 0.6;
+  opacity: 0.7;
+}
+.home-infotext {
+  background-color: rgba(242, 237, 228, 0.8);
   padding: 1em;
 }
 
 .home-button {
-  font-size: 1em;
+  font-size: 1.2em;
   background-color: #b0d1c0;
   color: #333233;
   text-decoration: none;
@@ -108,8 +116,9 @@ footer a {
   border: none;
   border-radius: 4px;
   text-transform: uppercase;
-  display: block;
-  margin: 1em auto;
+  position: absolute;
+  top: 80%;
+  left: 45%;
 }
 
 .home-button:hover {
@@ -170,13 +179,21 @@ footer a {
 .slogans {
   width: 60%;
   min-height: 200px;
-  margin: 0 auto;
-  padding-top: 40px;
+  margin: 2em auto;
 }
-
+.sustainable,
+.safety,
+.small-group {
+  background-color: rgba(242, 237, 228, 0.8);
+  padding: 1em;
+  border-radius: 50%;
+}
 .sustainable,
 .safety {
   margin-right: 2.5em;
+  background-color: rgba(242, 237, 228, 0.8);
+  padding: 1em;
+  border-radius: 50%;
 }
 
 /* --------------------------- GENERAL TOURS ------------------------------ */
@@ -450,7 +467,7 @@ textarea {
     background-position: 100%;
     overflow: hidden;
   }
-  .home-banner p {
+  .home-infotext {
     max-width: 50%;
     margin: 2em auto;
   }
@@ -566,7 +583,7 @@ textarea {
     height: 500px;
     width: 100%;
   }
-  .home-banner p {
+  .home-infotext {
     max-width: 40%;
     margin: 2em auto;
   }
