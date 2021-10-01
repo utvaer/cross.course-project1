@@ -1,0 +1,47 @@
+export const toursArray = [
+    {
+        name: "City Basics",
+        description: "This route covers the most famous sights in Geneva. We will ride to the UN headquarters, before discovering the old town's important history. The tour begins at the famous flower clock by the lakefront.",
+        distance: "20km", 
+        time: "10:00 daily",
+        price: 40,
+        image: "images/geneva-m.jpg",
+        id: "1",
+    },
+    {
+        name: "Discover the Lakefront",
+        description: "This is an easy cruise along the lakefront, where you will discover everything from people's favorite hangout spots to historical sights, and even the birthplace of Frankenstein! We meet up at the UN port.",
+        distance: "20km", 
+        time: "15:00 daily",
+        price: 40,
+        image: "images/cologny-m.jpg",
+        id: "2",
+    },
+    {
+        name: "Kids Love to Ride too",
+        description: "We cover the city's lakefront as well as the best playgrounds and ice cream around for a well-deserved break! Meet-up is on Place de Neuve in front of the beautiful Parc des Bastions. This tour is available on request.",
+        distance: "10km", 
+        time: "upon request",
+        price: 30,
+        image: "images/kids.jpg",
+        id: "3",
+    },
+    {
+        name: "Evening Adventures",
+        description: "We want to show you the best the city has to offer with less people around for great photography oppurtunities. We end the tour by showing you some of the city's best bars! We meet up by the Bains des Paquis for an apero first.",
+        distance: "10km", 
+        time: "21:00 Thursday-Saturday",
+        price: 30,
+        image: "images/night.jpg",
+        id: "4",
+    },
+    {
+        name: "Choose your Own Route",
+        description: "We want to make sure you discover the Geneva you want to see, so contact us in case you want a more personally adapted tour.",
+        distance: "upon request", 
+        time: "upon request",
+        price: 80,
+        image: "images/sunset-m.jpg",
+        id: "5",
+    }
+];

@@ -1,0 +1,615 @@
+/* --------------------------- GENERAL STYLES ------------------------------ */
+
+aside,
+article,
+section,
+header,
+footer,
+nav,
+form {
+  display: block;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f2ede4;
+  font-family: "Nanum Gothic", sans-serif;
+  width: 100%;
+}
+h1,
+h2,
+h3 {
+  font-family: "Lato", sans-serif;
+  color: #333233;
+}
+h1 {
+  text-align: center;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bolder;
+  border: 2px solid #333233;
+  border-radius: 2px;
+  padding: 0.5em;
+}
+.logo:hover {
+  background-color: #b0d1c0;
+  color: #333233;
+}
+
+.logo:active {
+  text-decoration: none;
+}
+
+.home-header,
+.tours-header,
+.about-header,
+.contact-header,
+.booking-header {
+  background-color: #b0d1c0;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  padding-bottom: 0.1%;
+  z-index: 1;
+}
+
+.active {
+  text-transform: uppercase;
+  border: 1px solid black;
+}
+a {
+  color: #333233;
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+footer {
+  color: #f2ede4;
+  background-color: #333233;
+  margin-top: 5%;
+  padding-top: 5%;
+  overflow: hidden;
+}
+
+footer a {
+  color: #f2ede4;
+}
+.footer-info {
+  display: flex;
+}
+
+.footer-extra {
+  text-align: center;
+}
+.footer-extra li {
+  display: inline;
+}
+
+/* --------------------------- GENERAL HOME ------------------------------ */
+
+.home-banner {
+  position: relative;
+}
+.home-banner p {
+  background-color: #f2ede4;
+  opacity: 0.6;
+  padding: 1em;
+  max-width: 60%;
+  margin: 1.5em auto;
+}
+
+.home-button {
+  font-size: 1em;
+  background-color: #b0d1c0;
+  color: #333233;
+  text-decoration: none;
+  padding: 0.5em 1.5em;
+  border: 1px solid #333233;
+  border-radius: 4px;
+  text-transform: uppercase;
+  position: absolute;
+  top: 80%;
+  left: 60%;
+}
+
+.home-button:hover {
+  cursor: pointer;
+  background-color: #c2128d;
+  transition: all 0.25s ease-out;
+}
+
+.home-button:active {
+  text-decoration: underline;
+}
+.container1,
+.container2,
+.container3,
+.slogans {
+  display: flex;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.section {
+  flex: 1;
+  min-height: 300px;
+  margin: 1em;
+  position: relative;
+  background-size: cover;
+  height: 300px;
+  width: 90%;
+  border-radius: 4px;
+}
+
+.section h2 {
+  text-align: center;
+  font-size: 1.5em;
+  position: absolute;
+  left: 5%;
+  background-color: #f2ede4;
+  opacity: 0.8;
+  padding: 0.5em 1em;
+}
+
+.city-basics {
+  background-image: url(../images/geneva-m2.jpg);
+}
+.lakefront {
+  background-image: url(../images/cologny-m2.jpg);
+}
+.family {
+  background-image: url(../images/kids2.jpg);
+}
+.evening {
+  background-image: url(../images/night2.jpg);
+}
+.customized {
+  background-image: url(../images/sunset-m2.jpg);
+}
+
+.slogans {
+  width: 60%;
+  min-height: 200px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+.sustainable,
+.safety {
+  margin-right: 2.5em;
+}
+
+/* --------------------------- GENERAL TOURS ------------------------------ */
+
+.tours-banner {
+  background-image: url(../images/tours-img.jpg);
+  background-size: cover;
+}
+
+.products {
+  max-width: 80%;
+  background-color: rgb(51, 50, 51, 0.8);
+  margin: 1em auto;
+  padding: 1em 0;
+}
+
+.tour {
+  color: #333233;
+  background-color: #f2ede4;
+  border-radius: 2px;
+  margin: 0.5em auto;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.tour h2 {
+  text-align: center;
+}
+.tour-image {
+  height: 300px;
+  width: 90%;
+  border-radius: 4px;
+  background-size: cover;
+  display: block;
+  margin: 1em auto;
+}
+
+.tour-button {
+  font-size: 1em;
+  text-transform: uppercase;
+  background-color: #b0d1c0;
+  color: #333233;
+  width: 100%;
+  border-radius: 4px;
+  padding: 0.5em 1.5em;
+  border: 1px solid #333233;
+}
+
+.tour-button:hover {
+  cursor: pointer;
+  background-color: #c2128d;
+  transition: all 0.25s ease-out;
+}
+
+.tour-info {
+  margin: 3em 0;
+}
+
+.cart {
+  background-color: rgb(176, 209, 192, 0.4);
+  border: 1px solid #b0d1c0;
+  width: 40%;
+  position: fixed;
+  top: 50%;
+  padding: 20px;
+  margin: auto;
+  display: none;
+  flex-direction: column;
+}
+
+.checkout-button {
+  background-color: rgb(0, 97, 0);
+  color: #f2ede4;
+  margin-top: 20px;
+  padding: 1em;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* --------------------------- GENERAL DETAILS ------------------------------ */
+.breadcrumb-nav {
+  margin: 2em;
+  padding: 2em;
+  text-decoration: underline;
+}
+
+/* ------------------------------ GENERAL CONTACT ----------------------------------*/
+
+.contact-p {
+  max-width: 60%;
+  margin: 2em auto;
+}
+
+form {
+  margin: 0 auto;
+  padding: 50px 0;
+  background-color: rgb(176, 209, 192, 0.2);
+  border: 1px solid #b0d1c0;
+  border-radius: 4px;
+}
+
+legend {
+  font-size: 1.5em;
+  text-decoration: underline;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+textarea {
+  height: 20em;
+  border: 3px solid #cccccc;
+  padding: 5px;
+  display: block;
+}
+
+.details {
+  border: 0px;
+  display: block;
+}
+
+.form__input {
+  display: block;
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+.form-button {
+  font-size: 1em;
+  background-color: #333233;
+  color: #f2ede4;
+  text-decoration: none;
+  padding: 0.5em 1.5em;
+  border: 1px solid #333233;
+  border-radius: 4px;
+  text-transform: uppercase;
+  margin-top: 10%;
+  margin-left: 60%;
+}
+
+.form-button:hover {
+  background-color: #c2128d;
+  transition: all 0.25s ease-out;
+}
+
+.form-button:active {
+  text-decoration: underline;
+}
+
+.message {
+  background-color: rgb(0, 97, 0, 0.5);
+  border: solid 2px rgb(0, 97, 0);
+  max-width: 40%;
+  margin: 0 auto;
+  padding: 3em;
+}
+
+.form-error {
+  display: none;
+  background-color: rgb(255, 0, 0, 0.5);
+  border: solid 2px #ff0000;
+  border-radius: 2px;
+  max-width: 80%;
+  padding: 0.5em;
+  margin-bottom: 1em;
+}
+
+/* ------------------------------ GENERAL SHOPPING CART -----------------------------------------*/
+
+.shopping-cart {
+  max-width: 60%;
+  margin: 2em auto;
+  background-color: rgb(176, 209, 192, 0.4);
+  border: 1px solid #b0d1c0;
+  border-radius: 4px;
+  padding: 20px;
+}
+.buy-btn {
+  font-size: 1em;
+  background-color: #333233;
+  color: #f2ede4;
+  text-decoration: none;
+  padding: 0.5em 1.5em;
+  border: 1px solid #333233;
+  border-radius: 4px;
+  text-transform: uppercase;
+  margin-top: 10%;
+  margin-left: 60%;
+}
+
+.buy-btn:hover {
+  background-color: #c2128d;
+  transition: all 0.25s ease-out;
+}
+
+.buy-btn:active {
+  text-decoration: underline;
+}
+
+/* ------------------------------ GENERAL SUCCESS --------------------------------------*/
+
+.breadcrumb {
+  padding: 3em;
+}
+
+.confirmation {
+  max-width: 60%;
+  margin: 3em auto;
+}
+
+/* ------------------------------ MOBILE -----------------------------------------*/
+
+@media only screen and (max-width: 767px) {
+  .logo {
+    top: 20px;
+    font-size: 1.2em;
+  }
+  .fas .fa-bars {
+    display: block;
+    text-align: center;
+  }
+
+  .main-nav {
+    display: none;
+  }
+
+  #hamburger-menu {
+    display: none;
+  }
+
+  #hamburger-menu:checked ~ nav {
+    display: block;
+  }
+
+  .main-nav li {
+    list-style: none;
+    padding: 5px;
+    display: block;
+    margin: 5px auto;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+  .footer-info {
+    flex-direction: column;
+    max-width: 80%;
+    margin: 1em auto;
+  }
+
+  /* ------------------------------ MOBILE HOME ----------------------------------*/
+  .flex {
+    margin-bottom: 60px;
+    margin-left: 8px;
+  }
+
+  .home-banner {
+    background-image: url(../images/geneva-jet-s.jpg);
+    min-height: 550px;
+    background-position: 100%;
+    overflow: hidden;
+  }
+
+  .container1,
+  .container2,
+  .container3,
+  .slogans {
+    flex-direction: column;
+    position: 100%;
+  }
+
+  /* ------------------------------ MOBILE TOURS ----------------------------------*/
+  .tours-banner {
+    min-height: 200px;
+  }
+
+  .products {
+    padding: 1em 0;
+    max-width: 100%;
+    display: column;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .tour {
+    max-width: 80%;
+  }
+
+  /* ------------------------------ MOBILE ABOUT ----------------------------------*/
+
+  .about-banner {
+    background-image: url(../images/white-bike.jpg);
+    background-size: cover;
+    height: 300px;
+  }
+
+  .about-article {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  /* ------------------------------ MOBILE CONTACT ----------------------------------*/
+  .contact-banner {
+    background-image: url(../images/carouge-m.jpg);
+    background-size: cover;
+    height: 300px;
+  }
+
+  form {
+    max-width: 80%;
+  }
+}
+
+/* ------------------------------ DESKTOP -------------------------------------------*/
+
+@media only screen and (min-width: 768px) {
+  header input {
+    display: none;
+  }
+  header ul {
+    text-align: left;
+    margin: 0;
+    padding: 1em;
+    top: 0;
+    width: 100%;
+  }
+  header li {
+    font-size: 1.1em;
+    display: inline-block;
+    padding: 0 0.5em;
+    border-right: 1px solid #333233;
+  }
+  header li:last-child {
+    border-right: none;
+  }
+  header .fas,
+  .fa-bars {
+    display: none;
+  }
+
+  .home-banner,
+  .tours-banner,
+  .about-banner,
+  .contact-banner {
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+    position: cover;
+  }
+  .footer-info {
+    justify-content: space-evenly;
+  }
+  .location {
+    display: block;
+  }
+  .contact {
+    display: block;
+  }
+  .contact a {
+    text-decoration: underline;
+  }
+
+  /* ------------------------------ DESKTOP HOME  ------------------------------------*/
+  .home-banner {
+    background-image: url(../images/night-lakefront.jpg);
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+  }
+
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 5%;
+  }
+
+  /* ------------------------------ DESKTOP TOURS ----------------------------------*/
+
+  .tours-banner {
+    min-height: 400px;
+  }
+
+  .products {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .tour {
+    max-width: 80%;
+  }
+
+  /* ------------------------------ DESKTOP ABOUT ----------------------------------*/
+
+  .about-banner {
+    background-image: url(../images/white-bike.jpg);
+    background-size: cover;
+    height: 500px;
+    padding-top: 0;
+  }
+  .about-article {
+    width: 600px;
+    margin: 0 auto;
+  }
+
+  /* ------------------------------ DEKSTOP CONTACT ----------------------------------*/
+
+  form {
+    max-width: 60%;
+  }
+
+  .contact-banner {
+    background-image: url(../images/carouge-l.jpg);
+    background-size: cover;
+    height: 500px;
+  }
+  .form-button {
+    cursor: pointer;
+  }
+}
