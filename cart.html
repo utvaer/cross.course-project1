@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Booking Re-CyCle" content="Overview of your bookings at the Re-CyCle guided tours of Geneva">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Your Booking | Re-CyCle</title>
+</head>
+<body>
+    <header class="booking-header">
+        <div class="flex">
+            <a href="index.html" class="logo">Re-CyCle</a>
+            <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
+            <input type="checkbox" id="hamburger-menu">
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="tours.html">Our Tours</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li class="active"><a href="cart.html">Your Booking</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h1>Your Shopping Cart</h1>
+        <div class="shopping-cart">
+            <div class="cart-list"></div>
+            <div class="total"></div>
+        </div>
+        <form action="form-success.php" method="POST">
+            <fieldset class="details">
+                <legend>Your payment information</legend>
+                <div>
+                    <label for="name">
+                        Name on card
+                        <input type="text" name="name" id="name" class="form__input">
+                    </label>
+                </div>
+                <div>
+                    <label for="number">
+                        Card number
+                        <input type="number" name="number" id="number" class="form__input">
+                    </label>
+                </div>
+                <div>
+                    <label for="number">
+                        Security Code
+                        <input type="number" name="number" id="number" class="form__input">
+                    </label>
+                </div>
+            </fieldset>
+            <a href="success.html" class="buy-btn" type="button">Purchase Now</a>
+        </form>
+    </main>
+    <footer>
+        <div class="footer-info">
+            <div class="location">
+                <address> Find us at:<br>Rue de Rive 16,<br> 1204 Geneva </address>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2761.428668690612!2d6.149245215049406!3d46.201926879116634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c652dfddde3bf%3A0x1c5fda90b286b42a!2sRue%20de%20Rive%2016%2C%201204%20Gen%C3%A8ve%2C%20Sveits!5e0!3m2!1sno!2sno!4v1622236881309!5m2!1sno!2sno"
+                    width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="contact">
+                <a href="contact.html">Contact Us</a>
+                <p> or just give us a call if you prefer</p>
+                <a href="tel:+41123-456-7890">Phone: 123-456-7890</a>
+            </div>
+        </div>
+        <div class="footer-extra">
+            <ul>
+                <li><a href="terms.html">Terms and Conditions</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li>&copy; Utv&aelig;r</li>
+            </ul>
+        </div>
+    </footer>
+    <script src="js/cart.js" type="module"></script>
+</body>
+</html>
