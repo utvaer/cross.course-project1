@@ -56,10 +56,6 @@ h1 {
   z-index: 1;
 }
 
-.active {
-  text-transform: uppercase;
-  border: 1px solid black;
-}
 a {
   color: #333233;
   text-decoration: none;
@@ -100,8 +96,6 @@ footer a {
   background-color: #f2ede4;
   opacity: 0.6;
   padding: 1em;
-  max-width: 60%;
-  margin: 1.5em auto;
 }
 
 .home-button {
@@ -109,13 +103,13 @@ footer a {
   background-color: #b0d1c0;
   color: #333233;
   text-decoration: none;
+  text-align: center;
   padding: 0.5em 1.5em;
-  border: 1px solid #333233;
+  border: none;
   border-radius: 4px;
   text-transform: uppercase;
-  position: absolute;
-  top: 80%;
-  left: 60%;
+  display: block;
+  margin: 1em auto;
 }
 
 .home-button:hover {
@@ -436,7 +430,7 @@ textarea {
   }
 
   h1 {
-    font-size: 1.5em;
+    font-size: 2em;
   }
   .footer-info {
     flex-direction: column;
@@ -455,6 +449,10 @@ textarea {
     min-height: 550px;
     background-position: 100%;
     overflow: hidden;
+  }
+  .home-banner p {
+    max-width: 50%;
+    margin: 2em auto;
   }
 
   .container1,
@@ -509,30 +507,36 @@ textarea {
 /* ------------------------------ DESKTOP -------------------------------------------*/
 
 @media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 3em;
+  }
   header input {
     display: none;
   }
-  header ul {
+  .main-nav ul {
     text-align: left;
     margin: 0;
     padding: 1em;
     top: 0;
     width: 100%;
   }
-  header li {
+  .main-nav li {
     font-size: 1.1em;
     display: inline-block;
     padding: 0 0.5em;
     border-right: 1px solid #333233;
   }
-  header li:last-child {
+  .main-nav li:last-child {
     border-right: none;
   }
   header .fas,
   .fa-bars {
     display: none;
   }
-
+  .active {
+    text-transform: uppercase;
+    border: 1px solid #333233;
+  }
   .home-banner,
   .tours-banner,
   .about-banner,
@@ -561,6 +565,10 @@ textarea {
     background-size: cover;
     height: 500px;
     width: 100%;
+  }
+  .home-banner p {
+    max-width: 40%;
+    margin: 2em auto;
   }
 
   .flex {
