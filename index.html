@@ -2,15 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="Re-CyCle Geneva cycling tours" content="Re-CyCle offers eco-friendly, guided tours of Geneva">
+  <meta name="description" content="Re-CyCle offers eco-friendly, guided tours of Geneva">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Nanum+Gothic&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Open+Sans&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <title> Home | Re-CyCle Geneva</title>
 </head>
+
 <body>
-  <header class="home-header">
+
+  <header class="header">
   <div class="flex">
     <a href="index.html" class="logo">Re-CyCle</a>
     <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
@@ -26,49 +30,23 @@
     </nav>
   </div>
   </header>
+
   <main>
     <div class="homepage">
       <div class="home-banner">
         <h1>Cycle Geneva with us</h1>
         <a href="tours.html" class="home-button">View Tours</a>
       </div>
-      <p class="home-infotext">We want to show you our hometown in the most pleasant and environmentally friendly way
-        possible. Discover the city's history, culture and lifestyle <em>like a local</em>.</p>
-      <p class="home-infotext">We make sure every tour is an unforgettable experience and adapted to your personal needs!</p>
-      <article class="offers-home">
-        <div class="container1">
-          <section class="city-basics section">
-            <a href="tours.html">
-              <h2>City Basics</h2>
-            </a>
-          </section>
-          <section class="lakefront section">
-            <a href="tours.html">
-              <h2>Discover the Lakefront</h2>
-            </a>
-          </section>
-        </div>
-        <div class="container2">
-          <section class="family section">
-            <a href="tours.html">
-              <h2>Kids Love to Ride Too!</h2>
-            </a>
-          </section>
-          <section class="evening section">
-            <a href="tours.html">
-              <h2>Evening Adventures</h2>
-            </a>
-          </section>
-        </div>
-        <div class="container3">
-          <section class="customized section">
-            <a href="tours.html">
-              <h2>Choose Your Own Route</h2>
-            </a>
-          </section>
-        </div>
-      </article>
-      <article>
+      <div class="home-infotext-container">
+        <p class="home-infotext">We want to show you our hometown in the most pleasant and environmentally friendly way
+          possible. Discover the city's history, culture and lifestyle <em>like a local</em>.</p>
+        <p class="home-infotext">We make sure every tour is an unforgettable experience and adapted to your personal needs!</p>
+      </div>
+
+      <div class="tours-overview tours-home">
+        <div class="loader"></div>
+      </div>
+
         <div class="slogans">
           <section class="sustainable">
             <img src="icons/check.png" alt="checkbox logo" class="check" />
@@ -83,30 +61,32 @@
             <p>We have a small group garantee, so you will never feel overcrowded.</p>
           </section>
         </div>
-      </article>
     </div>
   </main>
+
   <footer>
     <div class="footer-info">
       <div class="location">
-        <address> Find us:<br>Rue de Rive 16,<br> 1204 Geneva </address>
+        <h3>Find us</h3>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2761.428668690612!2d6.149245215049406!3d46.201926879116634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c652dfddde3bf%3A0x1c5fda90b286b42a!2sRue%20de%20Rive%2016%2C%201204%20Gen%C3%A8ve%2C%20Sveits!5e0!3m2!1sno!2sno!4v1622236881309!5m2!1sno!2sno"
-          width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
       <div class="contact">
-        <a href="contact.html">Contact Us</a>
+        <h3><a href="contact.html">Contact Us</a></h3>
         <p> or just give us a call if you prefer</p>
         <a href="tel:+41123-456-7890">Phone: 123-456-7890</a>
       </div>
-    </div>
-    <div class="footer-extra">
-      <ul>
-        <li><a href="terms.html">Terms and Conditions</a></li>
-        <li><a href="privacy.html">Privacy Policy</a></li>
-        <li>&copy; Utv&aelig;r</li>
-      </ul>
+      <div class="footer-extra">
+        <h3>Site Info</h3>
+          <div><a href="terms.html">Terms and Conditions</a></div>
+          <div><a href="privacy.html">Privacy Policy</a></div>
+          <div>&copy; Utv&aelig;r</div>
+      </div>
     </div>
   </footer>
+
+  <script src="js/tours.js" type="module"></script>
 </body>
+
 </html>
