@@ -14,7 +14,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f2ede4;
-  font-family: "Nanum Gothic", sans-serif;
+  font-family: "Open Sans", sans-serif;
   width: 100%;
 }
 h1,
@@ -25,6 +25,8 @@ h3 {
 }
 h1 {
   text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
 }
 
 .logo {
@@ -43,11 +45,7 @@ h1 {
   text-decoration: none;
 }
 
-.home-header,
-.tours-header,
-.about-header,
-.contact-header,
-.booking-header {
+.header {
   background-color: #b0d1c0;
   position: sticky;
   width: 100%;
@@ -56,10 +54,6 @@ h1 {
   z-index: 1;
 }
 
-.active {
-  text-transform: uppercase;
-  border: 1px solid black;
-}
 a {
   color: #333233;
   text-decoration: none;
@@ -73,22 +67,39 @@ footer {
   color: #f2ede4;
   background-color: #333233;
   margin-top: 5%;
-  padding-top: 5%;
+  padding: 5% 0;
   overflow: hidden;
 }
-
+footer h3 {
+  color: #f2ede4;
+}
 footer a {
   color: #f2ede4;
 }
 .footer-info {
   display: flex;
 }
-
-.footer-extra {
-  text-align: center;
+.footer-extra div {
+  padding-bottom: 1em;
 }
-.footer-extra li {
-  display: inline;
+.loader {
+  border: 4px solid #b0d1c0;
+  border-top: 4px solid #333233;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  animation: spin 2s linear infinite;
+  display: block;
+  margin: 2em auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* --------------------------- GENERAL HOME ------------------------------ */
@@ -96,26 +107,34 @@ footer a {
 .home-banner {
   position: relative;
 }
-.home-banner p {
+.home-banner h1 {
+  text-transform: uppercase;
   background-color: #f2ede4;
-  opacity: 0.6;
+  opacity: 0.7;
+}
+.home-infotext-container {
+  background-color: #333233;
+  padding: 2em;
+  margin-bottom: 2em;
+}
+.home-infotext {
+  background-color: rgba(242, 237, 228, 0.8);
   padding: 1em;
-  max-width: 60%;
-  margin: 1.5em auto;
 }
 
 .home-button {
-  font-size: 1em;
+  font-size: 1.2em;
   background-color: #b0d1c0;
   color: #333233;
   text-decoration: none;
+  text-align: center;
   padding: 0.5em 1.5em;
-  border: 1px solid #333233;
+  border: none;
   border-radius: 4px;
   text-transform: uppercase;
   position: absolute;
   top: 80%;
-  left: 60%;
+  left: 45%;
 }
 
 .home-button:hover {
@@ -136,53 +155,24 @@ footer a {
   margin: 0 auto;
 }
 
-.section {
-  flex: 1;
-  min-height: 300px;
-  margin: 1em;
-  position: relative;
-  background-size: cover;
-  height: 300px;
-  width: 90%;
-  border-radius: 4px;
-}
-
-.section h2 {
-  text-align: center;
-  font-size: 1.5em;
-  position: absolute;
-  left: 5%;
-  background-color: #f2ede4;
-  opacity: 0.8;
-  padding: 0.5em 1em;
-}
-
-.city-basics {
-  background-image: url(../images/geneva-m2.jpg);
-}
-.lakefront {
-  background-image: url(../images/cologny-m2.jpg);
-}
-.family {
-  background-image: url(../images/kids2.jpg);
-}
-.evening {
-  background-image: url(../images/night2.jpg);
-}
-.customized {
-  background-image: url(../images/sunset-m2.jpg);
-}
-
 .slogans {
   width: 60%;
   min-height: 200px;
-  margin: 0 auto;
-  padding-top: 40px;
+  margin: 2em auto;
 }
-
+.sustainable,
+.safety,
+.small-group {
+  background-color: rgba(242, 237, 228, 0.8);
+  padding: 1em;
+  border-radius: 50%;
+}
 .sustainable,
 .safety {
   margin-right: 2.5em;
+  background-color: rgba(242, 237, 228, 0.8);
+  padding: 1em;
+  border-radius: 50%;
 }
 
 /* --------------------------- GENERAL TOURS ------------------------------ */
@@ -192,7 +182,7 @@ footer a {
   background-size: cover;
 }
 
-.products {
+.tours-overview {
   max-width: 80%;
   background-color: rgb(51, 50, 51, 0.8);
   margin: 1em auto;
@@ -214,9 +204,9 @@ footer a {
 }
 .tour-image {
   height: 300px;
-  width: 90%;
+  width: 60%;
   border-radius: 4px;
-  background-size: cover;
+  size: cover;
   display: block;
   margin: 1em auto;
 }
@@ -273,6 +263,7 @@ footer a {
 .breadcrumb-nav {
   margin: 2em;
   padding: 2em;
+  font-style: italic;
   text-decoration: underline;
 }
 
@@ -285,16 +276,14 @@ footer a {
 
 form {
   margin: 0 auto;
-  padding: 50px 0;
+  padding: 3em 2em;
   background-color: rgb(176, 209, 192, 0.2);
-  border: 1px solid #b0d1c0;
-  border-radius: 4px;
 }
 
 legend {
   font-size: 1.5em;
-  text-decoration: underline;
-  text-align: left;
+  text-decoration: none;
+  text-align: center;
   margin-bottom: 30px;
 }
 
@@ -354,9 +343,9 @@ textarea {
 .form-error {
   display: none;
   background-color: rgb(255, 0, 0, 0.5);
-  border: solid 2px #ff0000;
+  border: solid 1px #ff0000;
   border-radius: 2px;
-  max-width: 80%;
+  width: 50%;
   padding: 0.5em;
   margin-bottom: 1em;
 }
@@ -436,18 +425,23 @@ textarea {
   }
 
   h1 {
-    font-size: 1.5em;
+    font-size: 2em;
   }
   .footer-info {
     flex-direction: column;
     max-width: 80%;
-    margin: 1em auto;
+    margin: 0.2em auto;
+    justify-content: left;
+    font-size: 0.8em;
   }
 
   /* ------------------------------ MOBILE HOME ----------------------------------*/
   .flex {
-    margin-bottom: 60px;
     margin-left: 8px;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 2em 1em 2em;
+    align-items: center;
   }
 
   .home-banner {
@@ -456,10 +450,11 @@ textarea {
     background-position: 100%;
     overflow: hidden;
   }
+  .home-infotext {
+    max-width: 90%;
+    margin: 2em auto;
+  }
 
-  .container1,
-  .container2,
-  .container3,
   .slogans {
     flex-direction: column;
     position: 100%;
@@ -470,7 +465,7 @@ textarea {
     min-height: 200px;
   }
 
-  .products {
+  .tours-overview {
     padding: 1em 0;
     max-width: 100%;
     display: column;
@@ -509,30 +504,36 @@ textarea {
 /* ------------------------------ DESKTOP -------------------------------------------*/
 
 @media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 3em;
+  }
   header input {
     display: none;
   }
-  header ul {
+  .main-nav ul {
     text-align: left;
     margin: 0;
     padding: 1em;
     top: 0;
     width: 100%;
   }
-  header li {
+  .main-nav li {
     font-size: 1.1em;
     display: inline-block;
     padding: 0 0.5em;
     border-right: 1px solid #333233;
   }
-  header li:last-child {
+  .main-nav li:last-child {
     border-right: none;
   }
   header .fas,
   .fa-bars {
     display: none;
   }
-
+  .active {
+    text-transform: uppercase;
+    border: 1px solid #333233;
+  }
   .home-banner,
   .tours-banner,
   .about-banner,
@@ -543,13 +544,8 @@ textarea {
     position: cover;
   }
   .footer-info {
-    justify-content: space-evenly;
-  }
-  .location {
-    display: block;
-  }
-  .contact {
-    display: block;
+    justify-content: space-around;
+    flex-direction: row;
   }
   .contact a {
     text-decoration: underline;
@@ -561,6 +557,10 @@ textarea {
     background-size: cover;
     height: 500px;
     width: 100%;
+  }
+  .home-infotext {
+    max-width: 40%;
+    margin: 2em auto;
   }
 
   .flex {
@@ -582,7 +582,7 @@ textarea {
   }
 
   .tour {
-    max-width: 80%;
+    max-width: 60%;
   }
 
   /* ------------------------------ DESKTOP ABOUT ----------------------------------*/
