@@ -206,7 +206,7 @@ footer a {
   height: 300px;
   width: 90%;
   border-radius: 4px;
-  background-size: cover;
+  position: cover;
   display: block;
   margin: 1em auto;
 }
